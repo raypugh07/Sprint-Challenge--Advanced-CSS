@@ -1,8 +1,30 @@
 // Home Content
 
+.firstheader{
+  
+  //border:solid;
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  padding: 10px 20px 5px 20px;
+  background: @footer-background;
+
+}
+
 .home {
+  //border:dotted;
+  @media @phone{
+    width:100%
+  }
 
   .intro {
+    //border:solid;
+
+    .earth{
+      display:flex;
+      width:100%;
+      border-radius: 10px;
+    }
 
     h2 {
       padding: 15px;
@@ -18,6 +40,23 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .blast{
+      @media @phone{
+        width:100%;
+      }
+    }
+    .sky{
+      @media @phone{
+        display:none;
+      }
+    }
+    .launch{
+      @media @phone{
+        display:none;
+      }
+    
+    
+    }
 
     img {
       width: 28%;
@@ -40,14 +79,26 @@
   }
 
   .walk {
+    //border:dashed;
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone{
+      flex-direction: column-reverse;
+      width:100%;
+    }
 
     .walk-text {
+     // border:solid;
+      
       width: 50%;
+      @media @phone{
+        width:100%;
+        padding-left:20px;
+        padding-right:20px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,17 +109,33 @@
       }
 
       .btn {
+        .cheese-btn();
+        @media @phone {
+          width:100%;
+        }
       }
     }
 
     .walk-img {
+     // border:solid;
       width: 46%;
       margin-left: 4%;
+      @media @phone{
+        width:100%;
+        margin:0px;
+        padding:20px;
+        
+        
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+       // @media @phone{
+          //height:250px;
+
+        //}
       }
     }
   }

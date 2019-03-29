@@ -1,1 +1,32 @@
 // Mixins Here
+.font-nav {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: @main-font-color;
+  }
+.header-text {
+    font-size: 3.5rem;
+  //border:solid;
+  display:flex;
+  justify-content: center;
+
+}
+.cheese-btn (@btn-bg-color: #22283A; @button-font: @wild-sand;) {
+    background: @btn-bg-color;
+    width: 150px;
+    height:45px;
+    color:@button-font;
+    display:block;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 15px;
+    
+&:hover{
+    background: @wild-sand;
+    color: @btn-bg-color;
+
+
+    }
+}
