@@ -1,3 +1,13 @@
+.font-nav {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #5E6164;
+}
+.header-text {
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -194,6 +204,11 @@ footer {
   padding: 10px 20px 5px 20px;
   background: #F6F6F6;
 }
+.home .intro .earth {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -235,6 +250,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  width: 150px;
+  height: 45px;
+  color: #F6F6F6;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 15px;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F6F6;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
